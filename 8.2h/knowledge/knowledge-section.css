@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header.knowledge-header {
+    background-color: #28a745; /* 改为绿色调 */
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.knowledge-section {
+    padding: 4rem 2rem;
+    background-color: #e9f7ef; /* 背景色改为浅绿色 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    text-align: center;
+    min-height: 100vh; /* 保证整个部分充满页面高度 */
+}
+
+.knowledge-container {
+    max-width: 1200px; /* 限制容器最大宽度 */
+    margin: 0 auto;
+}
+
+.knowledge-container h2 {
+    font-size: 2.5rem;
+    color: #28a745; /* 改为绿色调 */
+    margin-bottom: 1rem;
+}
+
+.knowledge-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center; /* 卡片居中对齐 */
+}
+
+.knowledge-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px; /* 固定卡片最大宽度 */
+}
+
+.knowledge-card:hover {
+    transform: scale(1.05);
+}
+
+.knowledge-card h3 {
+    font-size: 1.5rem;
+    color: #28a745; /* 改为绿色调 */
+    margin-bottom: 1rem;
+}
+
+.knowledge-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.knowledge-btn {
+    background-color: #28a745; /* 按钮改为绿色 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.knowledge-btn:hover {
+    background-color: #218838; /* 按钮悬停时的深绿色 */
+}
+
+footer.knowledge-footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}

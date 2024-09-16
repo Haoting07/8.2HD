@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: #388E3C;
+    border-radius: 5px;
+}
+
+.cta-button .primary-btn {
+    background-color: white;
+    color: #4CAF50;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta-button .primary-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.hero {
+    background-color: #e0f7fa;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text .secondary-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-text .secondary-btn:hover {
+    background-color: #388E3C;
+}
+
+.hero-image img {
+    max-width: 80%; /* 缩小图片 */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.services {
+    background-color: #fff;
+    padding: 4rem 2rem;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    flex: 1; /* 确保每个模块占据相同的空间 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    flex-grow: 1; /* 确保文字部分占据剩余的可用空间 */
+}
+
+.tertiary-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+.tertiary-btn:hover {
+    background-color: #388E3C;
+}
+
+.map {
+    background-color: #f0f0f0;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.map-container img {
+    max-width: 80%; /* 缩小地图图片 */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-links a img {
+    width: 40px;
+    margin: 0 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a img:hover {
+    opacity: 0.7;
+}
+.service-card img {
+    width: 100%; /* 让图片适应容器宽度 */
+    height: 200px; /* 固定图片高度 */
+    object-fit: cover; /* 确保图片覆盖整个区域，不拉伸变形 */
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.map-container img {
+    height: 33vh; /* 将高度设置为视窗高度的三分之一 */
+    width: auto; /* 宽度根据高度自适应 */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.hero-image img {
+    height: 33vh; /* 将高度设置为视窗高度的三分之一 */
+    width: auto; /* 宽度根据高度自适应 */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* 将导航栏内容水平居中 */
+    align-items: center; /* 垂直居中对齐 */
+    gap: 2rem; /* 控制导航链接之间的间距 */
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* 增大字体 */
+    padding: 1rem 1.5rem; /* 调整导航项的内边距 */
+    transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: #388E3C;
+    border-radius: 5px;
+}
